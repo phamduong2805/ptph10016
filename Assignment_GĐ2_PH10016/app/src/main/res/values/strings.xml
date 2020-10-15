@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">asaimen</string>
+    <string name="title_activity_maps_acitivity">Map</string>
+    <string name="facebook_app_id">626305431543358</string>
+    <string name="fb_login_protocol_scheme">fb626305431543358</string>
+
+</resources>
