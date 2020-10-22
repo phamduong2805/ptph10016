@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_list_class">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#D9E9E0"
+        android:gravity="center"
+        android:text="Danh Sách Lớp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tbtlRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="1dp"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="10"
+                android:background="#E7F0E7"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="STT"/>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="30"
+                android:background="#E7F0E7"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Mã Lớp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="60"
+                android:background="#E7F0E7"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Tên Lớp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ltvListClass"></ListView>
+</LinearLayout>
